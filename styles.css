@@ -56,7 +56,9 @@ main {
     font-size: 1rem;
     font-weight: 800;
     border: none;
+    cursor: pointer;
     padding: 5px 5px 5px 15px;
+
 }
 
 .advantages-container div{
@@ -65,4 +67,63 @@ margin: 90px 0;
 
 iframe {
   width: 100%;
+}
+
+.cards-container{
+display: flex;
+flex-direction: column;
+
+}
+.card{
+border: 1px solid black;
+width: 300px;
+margin: 5px auto;
+}
+.card h5{
+  background-color: #ddd;
+  padding: 15px 0;
+  font-size: 1rem;
+}
+.card strong{
+  display: block;
+  margin: 20px 0;
+  font-size: 1.4rem;
+}
+
+.card p{
+  margin: 10px 0;
+}
+
+.card button{
+  margin: 20px 0;
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #f1c40f;
+  border: none;
+  cursor: pointer;
+}
+
+.card button:hover,.form-section button:hover{
+  background-color: #dfb40b;
+  transition: background-color 0.2s linear;
+}
+
+footer{
+  text-align: right;
+  background-color: #ddd;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+footer ul{
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  margin: 5px 0;
+}
+footer li {
+  margin: 0 15px;
+}
+footer p{
+  color: #444444;
 }
