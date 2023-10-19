@@ -5,7 +5,7 @@
 }
 body {
   background-color: #eee;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 nav {
@@ -44,6 +44,9 @@ main {
   background-color: #eee;
 }
 
+.form-section{
+  margin: 25px 0;
+}
 .form-section input {
   display: block;
   margin: 15px auto;
@@ -52,49 +55,54 @@ main {
   width: 280px;
 }
 .form-section button {
-    background-color: #f1c40f;
-    font-size: 1rem;
-    font-weight: 800;
-    border: none;
-    cursor: pointer;
-    padding: 5px 5px 5px 15px;
-
+  background-color: #f1c40f;
+  font-size: 1rem;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  padding: 5px 5px 5px 15px;
 }
 
-.advantages-container div{
-margin: 90px 0;
+.advantages-container div {
+  margin: 60px 0;
+}
+.advantages-container i {
+  font-size: 3rem;
+  color: darkorange;
+  display: none;
 }
 
 iframe {
   width: 100%;
+  max-width: 550px;
+  margin: 10px auto;
 }
 
-.cards-container{
-display: flex;
-flex-direction: column;
-
+.cards-container {
+  display: flex;
+  flex-direction: column;
 }
-.card{
-border: 1px solid black;
-width: 300px;
-margin: 5px auto;
+.card {
+  border: 1px solid black;
+  width: 300px;
+  margin: 5px auto;
 }
-.card h5{
+.card h5 {
   background-color: #ddd;
   padding: 15px 0;
   font-size: 1rem;
 }
-.card strong{
+.card strong {
   display: block;
   margin: 20px 0;
   font-size: 1.4rem;
 }
 
-.card p{
+.card p {
   margin: 10px 0;
 }
 
-.card button{
+.card button {
   margin: 20px 0;
   padding: 10px 15px;
   font-size: 1rem;
@@ -103,19 +111,20 @@ margin: 5px auto;
   cursor: pointer;
 }
 
-.card button:hover,.form-section button:hover{
+.card button:hover,
+.form-section button:hover {
   background-color: #dfb40b;
   transition: background-color 0.2s linear;
 }
 
-footer{
+footer {
   text-align: right;
   background-color: #ddd;
   margin-top: 30px;
   padding: 20px;
 }
 
-footer ul{
+footer ul {
   list-style: none;
   display: flex;
   justify-content: end;
@@ -124,6 +133,64 @@ footer ul{
 footer li {
   margin: 0 15px;
 }
-footer p{
+footer p {
   color: #444444;
+}
+
+@media only screen and (min-width: 550px) {
+  .advantages-container div {
+    display: flex;
+    text-align: left;
+    padding: 0 20px;
+  }
+  .advantages-container i {
+    display: inline-block;
+    margin: 0 30px 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  nav {
+    grid-template-columns: "1fr 1fr 1fr 1fr 1fr";
+    grid-template-rows: "1fr 1fr 1fr";
+    justify-content: space-between;
+  }
+  nav img {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  nav ul {
+    grid-column: 3/5;
+    grid-row: 1/4;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  main {
+    margin-top: 80px;
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+  }
+  nav li {
+    margin: 0 10px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .cards-container {
+    flex-direction: row;
+  }
+
+  .card {
+    border: 1px solid black;
+    width: 250px;
+    margin: 5px auto;
+  }
+
 }
