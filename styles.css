@@ -47,14 +47,14 @@ main {
 .form-section{
   margin: 25px 0;
 }
-.form-section input {
+.form-section #email {
   display: block;
   margin: 15px auto;
   padding: 5px;
   height: 2rem;
   width: 280px;
 }
-.form-section button {
+.form-section #submit {
   background-color: #f1c40f;
   font-size: 1rem;
   font-weight: 800;
@@ -67,6 +67,8 @@ main {
   margin: 60px 0;
 }
 .advantages-container i {
+  width: 120px;
+  display: inline-block;
   font-size: 3rem;
   color: darkorange;
   display: none;
@@ -76,9 +78,11 @@ iframe {
   width: 100%;
   max-width: 550px;
   margin: 10px auto;
+  margin-bottom: 50px;
 }
 
 .cards-container {
+  justify-content: space-around;
   display: flex;
   flex-direction: column;
 }
@@ -86,6 +90,7 @@ iframe {
   border: 1px solid black;
   width: 300px;
   margin: 5px auto;
+  
 }
 .card h5 {
   background-color: #ddd;

@@ -13,16 +13,17 @@
     <title>freecodecamp landing page project1</title>
   </head>
   <body>
-    <header>
-      <nav>
+    <header id="header">
+      <nav id="nav-bar">
         <img
+          id="header-img"
           src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
           alt="logo image"
         />
         <ul>
-          <li><a href="">Features</a></li>
-          <li><a href="">How it Works</a></li>
-          <li><a href="">Pricing</a></li>
+          <li><a class="nav-link" href="#Features">Features</a></li>
+          <li><a class="nav-link" href="#video">How it Works</a></li>
+          <li><a class="nav-link" href="#Pricing">Pricing</a></li>
         </ul>
       </nav>
     </header>
@@ -30,13 +31,13 @@
     <main>
       <section class="form-section">
         <h2>Handcrafted,home-made masterpieces</h2>
-        <form action="">
-          <input type="email" placeholder="Enter your email address" />
-          <button type="submit">GET STARTED</button>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input id="email" name="email" type="email" placeholder="Enter your email address" />
+          <input id="submit" type="submit" value="GET STARTED"/>
         </form>
       </section>
 
-      <section class="advantages-container">
+      <section id="Features" class="advantages-container">
         <div>
           <i class="fa-solid fa-fire-flame-curved"></i>
           <span>
@@ -71,17 +72,17 @@
         </div>
       </section>
 
-
+      
       <iframe
+        id="video"
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/VIDEO_ID"
+        src="https://www.youtube.com/embed/y8Yv4pnO7qc"
         frameborder="0"
         allowfullscreen
       ></iframe>
-      <br /><br /><br />
 
-      <section class="cards-container">
+      <section id="Pricing" class="cards-container">
         <div class="card">
           <h5>TENOR TROMBONE</h5>
           <strong>$600</strong>
